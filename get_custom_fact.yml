@@ -1,8 +1,4 @@
-# To get custom facts
----
- - name: Finding Custom Facts
+- name: Finding Custom Facts
    hosts: localhost
    tasks:
-    - debug: msg="The custom fact value is {{ansible_local.echo}}"
     - debug: msg="The custom fact value is {{ansible_local.uptime}}"
-    - debug: msg="The custom fact value is {{ansible_local.git}}"
